@@ -4,7 +4,13 @@ public class WeatherParser implements WeatherParserInterface {
 
     @Override
     public int getTemperature(String city) {
-        return 0;
-    }
+        if (city == "Novosibirsk") {
+            return 21;
+        }
+        else {
+            return 3;
+        }
+
+}
 
 }
