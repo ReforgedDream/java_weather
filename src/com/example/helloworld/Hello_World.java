@@ -2,9 +2,9 @@ package com.example.helloworld;
 
 public class Hello_World {
 
-    public static void printTempInCity (String inputCity){
+    static WeatherParser parser1 = new WeatherParser();
 
-        WeatherParser parser1 = new WeatherParser();
+    static private void printTempInCity(String inputCity){
 
         System.out.println("Temperature in "+ inputCity + " is " + parser1.getTemperature(inputCity) + "!");
     }
