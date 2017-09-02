@@ -1,0 +1,10 @@
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    }
+
+dependencies {
+    compile 'org.jsoup:jsoup:1.10.3'
+    }

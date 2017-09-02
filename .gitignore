@@ -1,8 +1,17 @@
+# General
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+#Gradle
+.gradle/
+build/
+
 # IntelliJ IDEA
-.idea/
-out/
-/src/META-INF/
+/.idea/
 *.iml
 *.iws
 *.ipr
+out/
+
 
