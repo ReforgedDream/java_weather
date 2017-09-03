@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package helloworld;
 
 public interface VKMembersParserInterface {
 
