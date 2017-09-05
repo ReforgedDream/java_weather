@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package helloworld;
 
 import org.jsoup.Jsoup;
 
@@ -54,7 +54,7 @@ public class WeatherParser implements WeatherParserInterface {
         try {
             html = Jsoup.connect(myURL).get().html();
         } catch (IOException e) {
-            e.printStackTrace(System.out);
+           e.printStackTrace(System.out);
         }
 
         //if there is the piece of code that precedes the temperature, then parse it...
