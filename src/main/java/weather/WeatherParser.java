@@ -1,4 +1,4 @@
-package helloworld;
+package weather;
 
 import org.jsoup.Jsoup;
 

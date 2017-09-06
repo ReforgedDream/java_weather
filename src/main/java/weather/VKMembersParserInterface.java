@@ -1,4 +1,4 @@
-package helloworld;
+package weather;
 
 public interface VKMembersParserInterface {
 
