@@ -13,5 +13,5 @@ build/
 *.iws
 *.ipr
 out/
-
+src/main/java/META-INF
 
