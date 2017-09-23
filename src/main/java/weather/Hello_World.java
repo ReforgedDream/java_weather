@@ -11,7 +11,13 @@ public class Hello_World {
 
         //call the WeatherParser's class getTemperature
         //and print it to standard output along with some human-readable notes
-        System.out.println("Temperature in "+ inputCity + " is " + parser1.getTemperature(inputCity) + "!");
+        String temper = parser1.getTemperature(inputCity);
+        if(temper != "ЕГГОГ") {
+            System.out.println("Temperature in " + inputCity + " is " + temper + "!");
+        }
+        else{
+            System.out.println("Unable to parse page");
+        }
     }
 
     public static void main(String[] args) {
@@ -21,7 +27,7 @@ public class Hello_World {
         //write prompt in console
         System.out.println("Enter city name:");
 
-        //get typed the walue in currentCity
+        //get the typed walue in currentCity
         String currentCity = in.next();
 
         //call the method that prints the human-readable message about weather

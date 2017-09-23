@@ -2,6 +2,6 @@ package weather;
 
 public interface WeatherParserInterface {
 
-    int getTemperature(String city);
+    String getTemperature(String city);
 
 }

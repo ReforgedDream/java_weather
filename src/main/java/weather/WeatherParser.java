@@ -8,7 +8,7 @@ public class WeatherParser implements WeatherParserInterface {
 
     //method to return current air temperature in specified city
     @Override
-    public int getTemperature(String city) {
+    public String getTemperature(String city) {
 
         /*
         URL yandexURL;
@@ -44,7 +44,6 @@ public class WeatherParser implements WeatherParserInterface {
 
         //indexes to search weather parameters in html listing
         int startIndex = 0;
-        int endIndex = 0;
 
         //a sequence to search current temperature value
         final String temperatureSearchString = "thermometer_type_now\">";
@@ -69,11 +68,11 @@ public class WeatherParser implements WeatherParserInterface {
             temporaryString = html.substring(startIndex, startIndex + 3);
 
             //convert temperature from string to int (together with sign) and return it
-            return Integer.parseInt(temporaryString);
+            return (temporaryString);
         }
         else{
             //if there is no such a code :(
-            return 999;
+            return "ЕГГОГ";
         }
 
 }
